@@ -1,16 +1,19 @@
 set :application, "CodingWays"
 set :repository,  'https://github.com/codingways/codingways.git'
 set :deploy_to, '/var/www/codingways.com'
-
 set :scm, :git
-set :user, 'usuario'
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :branch, 'master'
 
-role :web, "codingways.com"                          # Your HTTP server, Apache/etc
-role :app, "codingways.com"                          # This may be the same as your `Web` server
-role :db,  "codingways.com", :primary => true # This is where Rails migrations will run
+#/************ SERVER INFORMATION ********/
+set :location, '10.8.0.1'
+set :user, 'ubuntu'
+ssh_options[:keys] = [File.join(ENV["HOME"],".ssh","jpmermoz.pem")]
+role :web, location                          # Your HTTP server, Apache/etc
+role :app, location                          # This may be the same as your `Web` server
+role :db,  location, :primary => true # This is where Rails migrations will run
+#/***************************************/
 
 namespace :deploy do
   task :start do ; end
@@ -24,18 +27,3 @@ namespace :deploy do
   end
 end
 
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-# if you want to clean up old releases on each deploy uncomment this:
-# after "deploy:restart", "deploy:cleanup"
-
-# if you're still using the script/reaper helper you will need
-# these http://github.com/rails/irs_process_scripts
-
-# If you are using Passenger mod_rails uncomment this:
-# namespace :deploy do
-#   task :start do ; end
-#   task :stop do ; end
-#   task :restart, :roles => :app, :except => { :no_release => true } do
-#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#   end
-# end
