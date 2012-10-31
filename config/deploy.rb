@@ -1,3 +1,5 @@
+require 'bundle/capistrano'
+
 set :application, "CodingWays"
 set :repository,  'https://github.com/codingways/codingways.git'
 set :deploy_to, '/var/www/codingways.com'
