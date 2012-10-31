@@ -1,14 +1,144 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Codingways</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-<%= yield %>
+    <!-- Type your description -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-</body>
+    <!-- Type your title here -->
+    <title>Coding Ways || Developers</title>
+
+    <!-- Load styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="scripts/styleshwitcher.css" media="screen">
+
+    <link rel="stylesheet" type="text/css" href="css/blue.css" media="screen">
+
+
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="./css/style.ie7.css" />
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="./css/style.ie8.css" />
+    <![endif]-->
+
+
+    <!-- Load scripts -->
+    <script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.countdown.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>  
+    <script type="text/javascript" src="scripts/bar.js"></script>
+    <script type="text/javascript" src="scripts/jquery.form.js"></script>  
+    <script type="text/javascript" src="scripts/cufon-yui.js"></script><style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style>
+    <script type="text/javascript" src="scripts/yanone-kaffeesatz-light.cufonfonts.js"></script>
+    <script type="text/javascript" src="scripts/styleswitch.js"></script>
+    <script type="text/javascript">
+      Cufon.replace('#styleSwitcher span') ('h2') ('h3') ('#pb1') ('.p1') ('li.title') ('label') ('.text1');
+      </script>
+      <script type="text/javascript" src="scripts/jquery_002.js"></script>
+      <script type="text/javascript" src="scripts/cssLoader.js"></script>
+      <!--[if IE]><script>
+        $(document).ready(function() { 
+        $("#contact").addClass('hide');
+        })
+      </script><![endif]-->
+      <!-- End Load scripts -->
+
+    </head>
+    <body>
+
+
+    <!--[if lte IE 6]>
+    <h3>You use Internet Explorer 6 or older, please update your browser!</h3>
+    <![endif]-->
+
+
+    <!--BEGIN MAIN CONTENT-->
+    <!--main-->
+    <div id="main">
+
+
+      <!--wrapper-->
+      <div id="wrapper">
+
+
+        <!--BEGIN HEADER CONTENT--> 
+       
+        <!--ribbon-->
+        <div id="ribbon">
+          <div class="header"></div>
+        </div><!--end ribbon-->
+        <!--END HEADER CONTENT--> 
+
+
+        <!--BEGIN BOX CONTENT--> 
+        <!--box-->
+        <div id="box">    
+          <br /><br />
+ <!--logo-->
+        <div class="logo">  
+          <a href="#"><img src="images/logo.png" alt="Logo" width="290px" height="100px"></a>    
+        </div><!--end logo-->
+
+
+          <!-- separator -->
+          <div class="separator"></div><!--end separator-->
+
+          <!--social icon-->
+          <div id="icons">  
+            <div style="font-size: 20px;color: #2f738c;font-weight: bold;">Contacto</div>
+            <a href="mailto:contacto@codingways.com"><img src="images/message.png" width="32" height="32" alt="contact"></a>
+          </div><!--end social icon-->
+
+
+
+
+          <!--begin contact form-->
+          <div id="contact">
+            <a href="#" class="close"></a>  
+            <div class="shadow"></div>
+            <div id="form_wrap">
+              <form id="contact-form" action="javascript:alert('success!');">
+                <div class="contact_img"></div>
+                <div class="sep"></div>
+                <p id="formstatus"></p>
+                <label for="name"><cufon class="cufon cufon-canvas" alt="Name " style="width: 28px; height: 14px; "><canvas width="39" height="16" style="width: 39px; height: 16px; top: -1px; left: -2px; "></canvas><cufontext>Name </cufontext></cufon><cufon class="cufon cufon-canvas" alt=":" style="width: 3px; height: 14px; "><canvas width="14" height="16" style="width: 14px; height: 16px; top: -1px; left: -2px; "></canvas><cufontext>:</cufontext></cufon></label>
+                <input type="text" name="name" value="" id="name"><br>
+                <label for="email"><cufon class="cufon cufon-canvas" alt="Email " style="width: 29px; height: 14px; "><canvas width="40" height="16" style="width: 40px; height: 16px; top: -1px; left: -2px; "></canvas><cufontext>Email </cufontext></cufon><cufon class="cufon cufon-canvas" alt=":" style="width: 3px; height: 14px; "><canvas width="14" height="16" style="width: 14px; height: 16px; top: -1px; left: -2px; "></canvas><cufontext>:</cufontext></cufon></label>
+                <input type="text" name="email" value="" id="email"><br>
+                <label for="email"><cufon class="cufon cufon-canvas" alt="Message " style="width: 43px; height: 14px; "><canvas width="54" height="16" style="width: 54px; height: 16px; top: -1px; left: -2px; "></canvas><cufontext>Message </cufontext></cufon><cufon class="cufon cufon-canvas" alt=":" style="width: 3px; height: 14px; "><canvas width="14" height="16" style="width: 14px; height: 16px; top: -1px; left: -2px; "></canvas><cufontext>:</cufontext></cufon></label>
+                <textarea name="message" rows="" cols="" id="message"></textarea>
+                <div class="bar"></div><input type="submit" name="submit" value="" class="button">
+              </form>
+            </div>
+          </div><!--end contact form--> 
+
+          <!--begin shadow effect--> 
+          <div id="shadow"></div><!--end shadow effect-->
+
+
+        </div><!--end box-->
+        <!--END BOX CONTENT--> 
+
+
+      </div><!--end wrapper-->
+
+
+    </div><!--end main-->
+    <!--END MAIN CONTENT--> 
+    <div style="display:none;">
+      <script language="javascript" type="text/javascript" src="http://js.users.51.la/5436150.js"></script><a href="http://www.51.la/?5436150" target="_blank"><img alt="51.la 专业、免费、强健的访问统计" src="http://icon.ajiang.net/icon_0.gif" style="border:none"></a>
+      <img style="width:0px;height:0px" src="http://web1.51.la:82/go.asp?svid=8&amp;id=5436150&amp;tpages=1&amp;ttimes=1&amp;tzone=-3&amp;tcolor=24&amp;sSize=1280,800&amp;referrer=http%3A//www.google.com.ar/url%3Fsa%3Dt%26rct%3Dj%26q%3D%26esrc%3Ds%26source%3Dweb%26cd%3D1%26ved%3D0CCEQFjAA%26url%3Dhttp%253A%252F%252Fwww.crown3ds.com%252F%26ei%3D2YORUP7gEI-o9gTFhYH4BA%26usg%3DAFQjCNFKxBmpGPaXzFqOYfVtTjWhrzrKdQ&amp;vpage=http%3A//www.crown3ds.com/">
+      <noscript>&lt;a href="http://www.51.la/?5436150" target="_blank"&gt;&lt;img alt="&amp;#x6211;&amp;#x8981;&amp;#x5566;&amp;#x514D;&amp;#x8D39;&amp;#x7EDF;&amp;#x8BA1;" src="http://img.users.51.la/5436150.asp" style="border:none" /&gt;&lt;/a&gt;</noscript>
+    </div>
+
+
+  </body>
 </html>

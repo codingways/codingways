@@ -1,0 +1,513 @@
+/*----------------------------------------------------------------------------------------------------
+ *Theme Name: Sindoro Under Construction
+ *Theme URI: http://wayangdesign.com/v1/
+ *Description: Sindoro Under Construction Page Template. Designed and Developed by harrywebss
+ *Version: 1.0.0 
+ *
+/*----------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------*/
+/* Reset */
+/*----------------------------------------------*/
+body, html  { height: 100%; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	list-style: none;
+	list-style-image: none;
+}
+
+
+#main
+{
+	padding: 0;
+	position: relative;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;}
+	
+#wrapper
+{
+	
+	position: relative;
+	width: 839px;
+	height: 580px;
+	padding: 0;
+  padding-top: 100px;
+	margin: 0 auto;}
+
+h3
+{
+	font-size: 21px;
+	padding-bottom: 3px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color:#807f7f;}
+h2
+{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color:#FFF;}
+	
+.fr
+{ 
+	float: right;}
+	
+.fl
+{
+	float: left;}
+
+
+/*----------------------------------------------*/
+/* Logo */
+/*----------------------------------------------*/
+#wrapper .logo
+{
+	padding: 100px 0px 25px 0;
+	position: relative;
+	text-align:center;
+	margin: 0 auto;}
+	
+#wrapper .logo a, .logo img
+{
+ 	margin: 0 auto;
+	text-align:center;
+	color:#fff;
+	text-decoration:none;}
+	
+
+
+
+/*----------------------------------------------*/
+/* Box */
+/*----------------------------------------------*/
+
+#box
+{
+	background: url(../images/bg_box.jpg) repeat;
+	position: relative;
+	width: 693px;
+	border: #FFF solid 3px;
+	height: 450px;
+	margin: 0 auto;
+	z-index: 1;}
+
+#shadow
+{
+	position: absolute;
+	margin: 0 auto;
+	display: inline;
+	background: url(../images/shadow.png) no-repeat;
+	top: 3px;
+	right: -45px;
+	width: 777px;
+	height: 491px;
+	z-index: 0;}
+
+
+
+/*----------------------------------------------*/
+/* Ribbon */
+/*----------------------------------------------*/
+
+#ribbon
+{
+	position: absolute;
+	width: 839px;
+	height: 69px;
+	right: 0px;
+	margin: 0 auto;
+	z-index: 999;}
+	
+/*----------------------------------------------*/
+/* Text Header */
+/*----------------------------------------------*/	
+#ribbon .header
+{
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	width: 435px;
+	height: 34px;
+	top: 15px;
+	z-index: 9999;}
+
+
+/*----------------------------------------------*/
+/* Countdown */
+/*----------------------------------------------*/
+
+#countdown
+{
+	position: relative;
+	margin: 0 auto;	
+	text-align: center;
+	width: 498px;
+	height: 120px;
+	padding: 90px 0 10px 0;
+	z-index: 999;}
+
+.days, .hours, .minutes, .seconds 
+{
+	background: url(../images/frame.html) no-repeat top center;
+	float: left;
+	width: 114px;
+	height: 114px;
+	text-align: center;
+	position:relative;
+	padding: 0 5px 0 5px;}
+
+.days img, .hours img, .minutes img, .seconds img 
+{
+	margin: -2px;
+	margin-top: 20px;}
+
+#countdown .title1
+{
+	position: absolute;
+	bottom: 13px;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;}
+
+#countdown .title
+{
+	position: absolute;
+	bottom: 17px;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;}
+
+
+
+/*----------------------------------------------*/
+/* Separator */
+/*----------------------------------------------*/
+#box .separator
+{
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	height: 2px;
+	width: 570px;
+	background: url(../images/sep.png) repeat-x;}
+	
+	
+/*----------------------------------------------*/
+/* Progress */
+/*----------------------------------------------*/
+
+#progress
+{
+	position: relative;
+	text-align:center;
+	margin: 0 auto;
+	padding: 120px 0 0 0;
+	height: 100px;
+	z-index: 999;}
+	
+.progressbar 
+{
+	background-position: bottom;
+	margin:0 auto; 
+	padding: 0px 0 1px 0; 
+	text-align:center; 
+	width:518px;
+	height: 45px; }
+
+#progress .p1 
+{
+	font-family: Tahoma;
+	font-size: 21px;
+	color: #615f5f; 
+	padding: 7px 0 0 5px;}
+
+#pb1_pbText 
+{
+	position:absolute; 
+	display:block; 
+	right: 105px; 
+	font-size:21px; 
+	font-family: Tahoma, Arial;
+	font-weight:normal; 
+	white; color: #fff; 
+	text-shadow: white 0px 0px 11px;
+	padding:13px 0 0 0;}
+
+
+
+/*----------------------------------------------*/
+/* Notify */
+/*----------------------------------------------*/
+
+#notify 
+{
+	padding-top: 20px; 
+	font-size: 12px; 
+	position: relative; 
+	width: 500px;
+	height: 130px; 
+	margin: 0 auto;
+	text-align: center;
+	color: #CCCCCC;
+	z-index: 9999;}
+
+#form
+{
+	position: relative;
+	margin-top: 10px;
+	padding: 5px;
+	width: 473px;
+	height: 38px;
+	z-index: 9999;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;}
+
+#form .email 
+{
+	background:url(../images/bg_input.png) left no-repeat;
+	font: 12px Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: #bbb 0px 1px 1px;
+	border:0;
+	margin: 1px 0 0 0;
+	padding-left: 5px;
+	width: 370px;
+	height: 35px;
+	color: #787777; 
+	float: left;}
+
+#notify .submessage 
+{
+	position: absolute;
+	font-family: Tahoma;
+	width: 400px;
+	padding: 0px 5px 5px 0;
+	top: 9px;
+	text-shadow: #fff 0px 1px 1px;
+}
+
+#notify .loader 
+{
+	position: absolute;
+	width: 400px;
+	text-align: center;
+	top: 9px;
+	padding: 0px 10px 0px 0;
+	margin: auto 0;
+	display: none;}
+	
+
+#notify .text1
+{
+	font-family: Arial;
+	text-transform: uppercase; 
+	text-shadow: #fff 0px 1px 0px;
+	font-size: 14px;
+	line-height: 1.2em;
+	color:#666666;}
+
+#warning p 
+{
+	position: absolute;
+	right: 120px;
+	text-align:center;
+	padding: 0;
+	margin: 0 auto;
+	color: #be6363;
+	text-shadow: #fff 0px 1px 1px;}
+
+
+	
+
+/*----------------------------------------------*/
+/* Icons*/
+/*----------------------------------------------*/
+
+#icons
+{
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px 0 40px 0;
+	z-index: 9999;}
+
+	
+
+
+/*----------------------------------------------*/
+/* Contact Form*/
+/*----------------------------------------------*/	
+
+
+#contact 
+{
+	text-align: left;
+	width: 420px; 
+	margin: auto 0;
+	left: 150px;
+	bottom: 14px;
+	height: 350px;
+	position: absolute;
+	display: none;
+	z-index: 9999;}
+
+#contact .close 
+{
+	background: url(../images/close.png) no-repeat;
+	position:absolute;
+	right: 30px;
+	top: -7px;
+	width:32px; 
+	height:32px;
+	z-index: 9999;}
+
+#contact .shadow 
+{
+	background: url(../images/contact_shadow.png) no-repeat !important;
+	top: -10px;
+	left: 0px;
+	width: 420px;
+	height: 327px;
+	position: absolute;
+	z-index: 0;}
+	
+#contact h1 
+{
+	text-align:center;
+	font-size:23px; 
+	text-shadow:0 1px 0 #ede8d9; }
+
+
+#form_wrap.hide:after, #form_wrap.hide:before 
+{
+	display:none;}
+
+
+#contact form 
+{
+	background:#dedede url(../images/bg_contact.jpg) repeat !important; 
+	position:relative;
+	overflow:hidden;
+	width:318px;
+	margin:0px auto;
+	padding:20px; 
+	border: 3px solid #fff;}
+
+
+#form_wrap form 
+{
+	height:300px;}
+
+#formstatus 
+{
+	color: #ba7777;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding-bottom: 10px;}
+
+#form_wrap .contact_img
+{
+	background: url(../images/contact-us.png) no-repeat;
+	padding-bottom: 15px;
+	width: 115px;
+	height: 18px;}
+
+#form_wrap label 
+{
+	width: 70px;
+	height: 11px;
+	float: left;
+	padding-top: 10px;
+	font-size: 14px; 
+	color: #747474;
+	text-transform: uppercase; 
+	text-shadow: 0px 1px 0px #fff;}
+
+#contact input[type=text], #contact textarea 
+{
+	font: 12px normal normal uppercase helvetica, arial, serif;
+	position: relative;
+	color: #7c7873;
+	background: #e1e1e1;
+	width: 215px; 
+	height: 27px;
+	line-height: 27px;
+	margin: 5px 0 5px 0; 
+	padding: 0 10px;
+	border:1px solid #f8f8f8;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+	-moz-box-shadow: inset 0px 0px 1px #717171;
+	-webkit-box-shadow:  inset 0px 0px 1px #ababab; 
+	box-shadow:  inset 0px 0px 1px #b3b3b3;}
+
+#contact textarea 
+{
+	height: 90px;
+	padding-top: 1px;}
+
+#contact textarea:focus, #contact input[type=text]:focus 
+{
+	background:rgba(220,220,220,.35);}
+
+#form_wrap .button 
+{
+	background: url(../images/send.png) no-repeat;
+	border: none;
+	position:relative;
+	margin: 5px 10px;
+	font-size:12px; 
+	text-shadow: 0 1px 0 #fff;
+	width: 66px;
+	height: 25px; 
+	float: right;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	border-radius: 3px; }
+
+#form_wrap .button:hover 
+{
+ 	opacity: .85;}
+
+#form_wrap .sep 
+{
+	background: url(../images/sep.png) repeat-x;
+	padding: 5px 0 5px 0;
+	width: 100%;
+	height: 2px;}
+
+.formstatusok 
+{
+	color: #5b8f3e;}	
+
+.bar 
+{ 
+	background:url(../images/loading.gif) no-repeat center; 
+	margin: 7px 10px;
+	height: 16px; 
+	width: 16px;
+	float: right;
+	right: 45px;
+	position: absolute;
+	display: none;
+	z-index: 9999;}
+	
