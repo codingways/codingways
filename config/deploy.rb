@@ -1,4 +1,4 @@
-require 'bundle/capistrano'
+require 'bundler/capistrano'
 
 set :application, "CodingWays"
 set :repository,  'https://github.com/codingways/codingways.git'
