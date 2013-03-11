@@ -9,9 +9,8 @@ set :use_sudo, false
 set :branch, 'master'
 
 #/************ SERVER INFORMATION ********/
-set :location, '10.8.0.1'
-set :user, 'ubuntu'
-ssh_options[:keys] = File.join(ENV["HOME"],".ssh","jpmermoz.pem")
+set :location, '198.211.106.217'
+set :user, 'jpmermoz'
 role :web, location                          # Your HTTP server, Apache/etc
 role :app, location                          # This may be the same as your `Web` server
 role :db,  location, :primary => true # This is where Rails migrations will run
